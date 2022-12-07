@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mateus-zorinos/Documentos/Estudos/DIO/Estudos C#/Estudos C#.csproj": {}
+    "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/Estudos C#/Estudos C#.csproj": {}
   },
   "projects": {
-    "/home/mateus-zorinos/Documentos/Estudos/DIO/Estudos C#/Estudos C#.csproj": {
+    "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/Estudos C#/Estudos C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mateus-zorinos/Documentos/Estudos/DIO/Estudos C#/Estudos C#.csproj",
+        "projectUniqueName": "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/Estudos C#/Estudos C#.csproj",
         "projectName": "Estudos C#",
-        "projectPath": "/home/mateus-zorinos/Documentos/Estudos/DIO/Estudos C#/Estudos C#.csproj",
+        "projectPath": "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/Estudos C#/Estudos C#.csproj",
         "packagesPath": "/home/mateus-zorinos/.nuget/packages/",
-        "outputPath": "/home/mateus-zorinos/Documentos/Estudos/DIO/Estudos C#/obj/",
+        "outputPath": "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/Estudos C#/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mateus-zorinos/.nuget/NuGet/NuGet.Config"
