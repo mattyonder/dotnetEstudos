@@ -1,17 +1,56 @@
 ﻿using Estudos_C_.Models;
 
-//Pega a data atual
-DateTime dataAtual = DateTime.Now.AddDays(5);
-Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
+int inteiro = 5;
+string a = inteiro.ToString();
+Console.WriteLine(a);
+//Todos herdam por herança métodos da classe Object
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------------------------------
+
+// int a = 30;
+// int b = 0;
+
+// int c = a + b;
+// c = c + 5; // 30 + 5
+// c += 5; // É a mesma coisa de um c = c + 5
+// c -= 5; // Mesma cisa que c = c - 5
+// c *= 5; // Mesma coisa se aplica a outros sinais
+
+// --------------------------------------------------------------------------------
+
+// Cast - Casting
+// int a = Convert.ToInt32("null");
+// O Convert consegue lidar com valores nulos, retornando o 
+// o valor 0
+
+// Já o parse não consegue
+// int a = int.Parse("A");
+// Console.WriteLine(a);
+
+// --------------------------------------------------------------------------------
+
+// //Pega a data atual
+// DateTime dataAtual = DateTime.Now.AddDays(5);
+// Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
+
+// --------------------------------------------------------------------------------
 
 // string apresentacao = "Olá, seja bem vindo";
 
 // int quantidade = 1;
-
 // double altura = 1.70;
-
 // decimal preco = 1.80M;
-
 // bool condicao = true;
 
 // Console.WriteLine(apresentacao);
@@ -22,15 +61,7 @@ Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
 
 //ToString no altura para fazer o valor double ser mostrado com aquela formatação escrita
 
-
-
-
-
-
-
-
-
-
+// --------------------------------------------------------------------------------
 
 /*Pessoa pessoa = new Pessoa();
 
@@ -48,3 +79,5 @@ pessoaFisica.Apresentar();
 //Nome de variavel em camelCase 
 //Sem caracter especial em classe, variavel ou propriedade
 //Underline é uma exceção
+
+// --------------------------------------------------------------------------------
