@@ -1,9 +1,23 @@
 ﻿using Estudos_C_.Models;
 
-int inteiro = 5;
-string a = inteiro.ToString();
-Console.WriteLine(a);
-//Todos herdam por herança métodos da classe Object
+
+int quantidadeEmEstoque = 10;
+int quantidadeCompra = 4;
+bool possivelVenda = quantidadeEmEstoque >= quantidadeCompra;
+
+
+Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+Console.WriteLine($"É possivel realizar a venda? {possivelVenda}");
+ 
+if (possivelVenda)
+{
+    Console.WriteLine("Venda realizada. ");
+}
+else
+{
+    Console.WriteLine("Desculpe. Não temos a quantidade desejada em estoque. ");
+}
 
 
 
@@ -15,6 +29,50 @@ Console.WriteLine(a);
 
 
 
+
+
+
+
+// string a = "15 -";
+
+// int.TryParse(a, out int b);
+
+// Console.WriteLine(b);
+// Console.WriteLine("Conversão realizada com sucesso!");
+
+// --------------------------------------------------------------------------------
+
+// double a = 4 / (2 + 2);
+
+// Console.WriteLine(a);
+
+// --------------------------------------------------------------------------------
+
+// Eu posso adicionar valores de um tipo em outro tipo que
+// abriga valores maiores que ele ( tipo caixa pequena em uma grande )
+
+// Mas não posso fazer um "caixa grande dentro de caixa pequena"
+
+// int a = 5;
+// double b = a; //Aqui teve um casting implicito
+
+// int a = 5;
+// long b = a;
+
+// long a = long.MaxValue; // Não é possivel passar de long para int
+// int b = Convert.ToInt32(a);
+
+// int a = int.MaxValue;
+// long b = a;
+
+// Console.WriteLine(b);
+
+// --------------------------------------------------------------------------------
+
+// int inteiro = 5;
+// string a = inteiro.ToString();
+// Console.WriteLine(a);
+// //Todos herdam por herança métodos da classe Object
 
 // --------------------------------------------------------------------------------
 
