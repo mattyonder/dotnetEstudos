@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Estudos_C_.Models
 {
-    public class TiposDeDados
+    public class TiposDeDado
     {
         /*string @string = "Série de caracters";
         char @char = 'c';
