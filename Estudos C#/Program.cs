@@ -1,34 +1,68 @@
 ﻿using Estudos_C_.Models;
 
+bool choveu = false;
 
-Console.WriteLine("Digite uma letra: ");
-string letra = Console.ReadLine();
+bool estaTarde = false;
 
-switch (letra)
+if ( !choveu && !estaTarde )
 {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-
-        Console.WriteLine("Vogal");
-        break;
-
-    default:
-        Console.WriteLine("Não é uma vogal");
-        break;
-
+    Console.WriteLine("Vou pedalar");
+}
+else
+{
+    Console.WriteLine("Vou pedalar um outro dia");
 }
 
+// --------------------------------------------------------------------------------
 
+// bool presencaMinina = true;
+// double media = 6.9;
 
+// if ( presencaMinina && media >= 7 )
+// {
+//     Console.WriteLine("Está aprovado");
+// }
+// else
+// {
+//     Console.WriteLine("Está Reprovado");
+// }
 
+// --------------------------------------------------------------------------------
 
+// bool maior18Anos = true;
 
+// bool altorizacaoResponsavel = false;
 
+// if ( maior18Anos || altorizacaoResponsavel )
+// {
+//     Console.WriteLine("Está liberado a entrada");
+// }
+// else
+// {
+//     Console.WriteLine("Entrada barrada");
+// }
 
+// --------------------------------------------------------------------------------
 
+// Console.WriteLine("Digite uma letra: ");
+// string letra = Console.ReadLine();
+
+// switch (letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+
+//         Console.WriteLine("Vogal");
+//         break;
+
+//     default:
+//         Console.WriteLine("Não é uma vogal");
+//         break;
+
+// }
 
 // --------------------------------------------------------------------------------
 
