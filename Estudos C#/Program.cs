@@ -1,17 +1,63 @@
 ﻿using Estudos_C_.Models;
 
-bool choveu = false;
 
-bool estaTarde = false;
+Calculadora calc = new Calculadora();
 
-if ( !choveu && !estaTarde )
-{
-    Console.WriteLine("Vou pedalar");
-}
-else
-{
-    Console.WriteLine("Vou pedalar um outro dia");
-}
+calc.RaizQuadrada(25);
+
+// --------------------------------------------------------------------------------
+
+// Numero Incremento
+// int numeroIncremento = 10;
+
+// Console.WriteLine(numeroIncremento);
+
+// Console.WriteLine("Incrementando o 10");
+// numeroIncremento++;
+
+// Console.WriteLine(numeroIncremento);
+
+// //Numero Decremento
+// int numeroDecremento = 20;
+
+// Console.WriteLine(numeroDecremento);
+
+// Console.WriteLine("Decrementando o 20");
+// numeroDecremento--;
+
+// Console.WriteLine(numeroDecremento);
+
+// --------------------------------------------------------------------------------
+
+// calc.Seno(30);
+// calc.Coseno(30);
+// calc.Tangente(30);
+
+// --------------------------------------------------------------------------------
+
+// calc.Potencia(4, 2);
+
+// --------------------------------------------------------------------------------
+
+// calc.Somar(10, 30);
+// calc.Subtrair(30, 10);
+// calc.Multiplicar(4, 3);
+// calc.Dividir(10, 5);
+
+// --------------------------------------------------------------------------------
+
+// bool choveu = false;
+
+// bool estaTarde = false;
+
+// if ( !choveu && !estaTarde )
+// {
+//     Console.WriteLine("Vou pedalar");
+// }
+// else
+// {
+//     Console.WriteLine("Vou pedalar um outro dia");
+// }
 
 // --------------------------------------------------------------------------------
 
