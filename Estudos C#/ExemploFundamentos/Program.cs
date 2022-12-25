@@ -1,22 +1,47 @@
 ﻿using Estudos_C_.Common.Models;
 
-List<string> listaString = new List<string>();
 
-listaString.Add("SP");
-listaString.Add("BA");
-listaString.Add("MG");
-listaString.Add("RJ");
+// --------------------------------------------------------------------------------
 
-Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+// Instancia da classe pessoa
+Pessoa p = new Pessoa();
 
-listaString.Add("SC");
+/*
+    Atribui o nome e idade para pessoa
+    Passando o nome Mateus
+    E passando a idade 18
+*/
+p.Nome = "Mateus";
+p.Idade = 18;
 
-Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+// Faz a pessoa se apresentar
+p.Apresentar();
 
-listaString.Remove("MG");
 
-Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
+
+Calculadora c = new Calculadora();
+c.Somar(3, 4);
+c.Subtrair(4, 8);
+
+// --------------------------------------------------------------------------------
+
+// List<string> listaString = new List<string>();
+
+// listaString.Add("SP");
+// listaString.Add("BA");
+// listaString.Add("MG");
+// listaString.Add("RJ");
+
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Add("SC");
+
+// Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Remove("MG");
+
+// Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
 // --------------------------------------------------------------------------------
 
@@ -121,7 +146,7 @@ Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {list
 // do
 // {
 //     Console.WriteLine("Digite um número: (0 para parar)");
-    
+
 
 //     soma += numero;
 
