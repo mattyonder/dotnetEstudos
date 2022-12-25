@@ -1,24 +1,75 @@
 ﻿using Estudos_C_.Common.Models;
 
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Mateus";
-pessoa1.Idade = 17;
-pessoa1.Apresentar();
+List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Add("SC");
+
+Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Remove("MG");
+
+Console.WriteLine($"Item na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
 
+// --------------------------------------------------------------------------------
 
+// Console.WriteLine("Percorrendo a lista com o FOR");
+// for (int contador = 0; contador < listaString.Count; contador++)
+// {
+//     Console.WriteLine($"Posição n° {contador} - {listaString[contador]}");
+// }
 
+// Console.WriteLine("Percorrendo a lista com o FOREACH");
+// int contadorForeach = 0;
+// foreach (string item in listaString)
+// {
+//     Console.WriteLine($"Posição n° {contadorForeach} - {listaString[contadorForeach]}");
+//     contadorForeach++;
+// }
 
+// --------------------------------------------------------------------------------
 
+// int[] arrayInteiros = new int[4];
 
+// arrayInteiros[0] = 32;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+// arrayInteiros[3] = 50;
 
+// // int tamanho = 9;
 
+// // Array.Resize(ref arrayInteiros, tamanho);
 
+// Console.WriteLine("Percorrendo o Arry co m FOREACH");
+// for (int i = 0; i < arrayInteiros.Length ; i++)
+// {
+//     Console.WriteLine($"{i}° Posição: {arrayInteiros[i]}");
+// }
 
+// Console.WriteLine("Percorrendo o Arry com FOREACH");
 
+// --------------------------------------------------------------------------------
 
+// int contadorForeach = 0;
+// foreach (int valor in arrayInteiros)
+// {
+//     Console.WriteLine($"Posição N° {contadorForeach} - {valor}");
+//     contadorForeach++;
+// }
 
+// --------------------------------------------------------------------------------
 
+// Pessoa pessoa1 = new Pessoa();
+// pessoa1.Nome = "Mateus";
+// pessoa1.Idade = 17;
+// pessoa1.Apresentar();
 
 // --------------------------------------------------------------------------------
 
