@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj": {}
+    "/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj": {}
   },
   "projects": {
-    "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj": {
+    "/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj",
+        "projectUniqueName": "/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj",
         "projectName": "ExemploExplorando",
-        "projectPath": "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj",
+        "projectPath": "/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj",
         "packagesPath": "/home/mateus-zorinos/.nuget/packages/",
-        "outputPath": "/home/mateus-zorinos/Documentos/Estudos/DIO/dotnetEstudos/ExemploExplorando/obj/",
+        "outputPath": "/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/mateus-zorinos/.nuget/NuGet/NuGet.Config"
