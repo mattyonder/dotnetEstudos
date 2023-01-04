@@ -1,31 +1,133 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
+// // --------------------------------------------------------------------------------
 
-try
-{
-    string[] lines = File.ReadAllLines("Arquivos/file_Reading.txt");
+// O Dictionary armazena dados e uma chave, essa que deve ser unica, lembra muito o conceito de orientação a objeto, de classe e objeto
+// Tudo que eu faço no dicionario é por meio de sua chave 
 
-    foreach (string line in lines)
-    {
-        Console.WriteLine(line);
-    }
-} catch(Exception ex)
-{
-    Console.WriteLine($"Ocorreu uma exeção genérica. {ex.Message}");
-}
+Dictionary<string, string> states = new Dictionary<string, string>();
 
+states.Add("SE", "Sergipe");
+states.Add("BA", "Bahia");
+states.Add("MG", "Minas Gerais");
 
+Console.WriteLine(states["MG"]);
 
+// foreach(KeyValuePair<string, string> item in states) Outra Sintaxe
+// foreach(var item in states)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
+// states.Remove("BA");
+// states["SE"] = "Sergipe - valor alterado";
 
+// Console.WriteLine("-----------------------------");
 
+// foreach(var item in states)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
+// string key = "BA2";
+// Console.WriteLine($"Verificando o elemento: {key}");
 
+// if (states.ContainsKey(key))
+// {
+//     Console.WriteLine($"Valor existente: {key}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {key}");
+// }
 
+// // --------------------------------------------------------------------------------
 
+//  O Stack funciona ao contrario da pilha, voce adiciona elementos como uma pilha mesmo, e o ultimo elemento dela que vai ser tratado em vez do primeiro
+// LIFO - LAST IN FIRST OUT
 
+// Stack<int> stack = new Stack<int>();
 
+// stack.Push(4);
+// stack.Push(6);
+// stack.Push(8);
+// stack.Push(10);
+
+// foreach(int item in stack)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento do topo: {stack.Pop()}");
+
+// stack.Push(20);
+
+// foreach(int item in stack)
+// {
+//     Console.WriteLine(item);
+// }
+
+// // --------------------------------------------------------------------------------
+
+// O Queue funciona como uma fila, ele vai tratar o primeiro componente dela como prioridade
+// FIFO - FIRST IN FIRST OUT
+
+// Queue<int> queue = new Queue<int>();
+
+// queue.Enqueue(2);
+// queue.Enqueue(4);
+// queue.Enqueue(6);
+// queue.Enqueue(8);
+
+// foreach(int item in queue)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento: {queue.Dequeue()}");
+// queue.Enqueue(10);
+
+// foreach(int item in queue)
+// {
+//     Console.WriteLine(item);
+// }
+
+// // --------------------------------------------------------------------------------
+
+// new ExemploExecao().Metodo1();
+
+// // --------------------------------------------------------------------------------
+
+// try
+// {
+//     string[] lines = File.ReadAllLines("Arquivos/fileReading.txt");
+
+//     foreach (string line in lines)
+//     {
+//         Console.WriteLine(line);
+//     }
+// }
+// // Há uma ordem em que deve ser colocado os exceptions pelo visto
+// catch(FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado. {ex.Message}");
+// }
+
+// catch(DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Caminho da pasta não encontrado {ex.Message}");
+// } 
+
+// catch(Exception ex)
+// {
+//     Console.WriteLine($"Ocorreu uma exeção genérica. {ex.Message}");
+// }
+
+// finally
+// {
+//     Console.WriteLine("Chegou até aqui");
+// }
 
 // // --------------------------------------------------------------------------------
 
