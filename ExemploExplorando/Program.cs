@@ -1,18 +1,83 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
+
+int number = 15;
+bool isEven = false;
+
+// IF TERNÁRIO
+isEven = number % 2 == 0;
+Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
+
+
+// IF NÃO TERNARIO
+// if (number % 2 == 0)
+// {
+//     Console.WriteLine($"O número {number} é par");
+// }
+// else
+// {
+//     Console.WriteLine($"O número {number} é impar");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // --------------------------------------------------------------------------------
+
+// Pessoa p1 = new Pessoa("Mateus", "Santos");
+
+// (string name, string lastname) = p1;
+
+// Console.WriteLine($"{name} {lastname}");
+
+// // --------------------------------------------------------------------------------
+
+// (int, string, string, decimal) tuple = (1, "Mateus", "Santos", 1.80M);
+
+// ValueTuple<int, string, string, decimal> otherTupleExemple = (1, "Mateus", "Santos", 1.80M);
+
+// var otherCreateTupleExemple = Tuple.Create(1, "Mateus", "Buta", 1.80M);
+
+
+// Console.WriteLine(tuple);
+
+// Console.WriteLine($"Id: {tuple.Item1}");
+// Console.WriteLine($"Nome: {tuple.Item2}");
+// Console.WriteLine($"Sobrenome: {tuple.Item3}");
+// Console.WriteLine($"Altura: {tuple.Item4}");
+
 // // --------------------------------------------------------------------------------
 
 // O Dictionary armazena dados e uma chave, essa que deve ser unica, lembra muito o conceito de orientação a objeto, de classe e objeto
 // Tudo que eu faço no dicionario é por meio de sua chave 
 
-Dictionary<string, string> states = new Dictionary<string, string>();
+// Dictionary<string, string> states = new Dictionary<string, string>();
 
-states.Add("SE", "Sergipe");
-states.Add("BA", "Bahia");
-states.Add("MG", "Minas Gerais");
+// states.Add("SE", "Sergipe");
+// states.Add("BA", "Bahia");
+// states.Add("MG", "Minas Gerais");
 
-Console.WriteLine(states["MG"]);
+// Console.WriteLine(states["MG"]);
 
 // foreach(KeyValuePair<string, string> item in states) Outra Sintaxe
 // foreach(var item in states)
