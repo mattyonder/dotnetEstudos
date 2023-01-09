@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FRCaQSbfGEU+dJLxjj5Uq8mIDe8prV8lV3JJYNFWhpV1di0NATsQO1Sipz+/FJtX+EoWBkg5lR4cNXI1LEO0yg==",
+  "dgSpecHash": "CQG/2aaL4YbMSJutgQY/BruaL1QEUlY201I+uT8NfmQzY0VInM68SZhrMyhmOcubZYu+Ze+w2e1/+aqMIn0hdg==",
   "success": true,
   "projectFilePath": "/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/ExemploExplorando.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/mateus-zorinos/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

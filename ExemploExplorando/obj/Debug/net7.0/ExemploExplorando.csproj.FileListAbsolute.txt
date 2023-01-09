@@ -28,3 +28,5 @@
 /home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/obj/Debug/net7.0/ExemploExplorando.pdb
 /home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/obj/Debug/net7.0/ExemploExplorando.genruntimeconfig.cache
 /home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/obj/Debug/net7.0/ref/ExemploExplorando.dll
+/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/mateus-zorinos/Documents/Estudos/DIO/dotnetEstudos/ExemploExplorando/obj/Debug/net7.0/ExemploExplorando.csproj.CopyComplete

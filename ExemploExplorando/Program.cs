@@ -1,14 +1,54 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
+using Newtonsoft.Json;
 
+// // --------------------------------------------------------------------------------
 
-int number = 15;
-bool isEven = false;
+// Deserializando o objeto no formato JSON
+
+string fileContent = File.ReadAllText("Arquivos/sales.json");
+
+List<Sale> saleList = JsonConvert.DeserializeObject<List<Sale>>(fileContent);
+
+foreach (Sale sale in saleList)
+{
+    Console.WriteLine($"Id: {sale.Id}, " +
+    $"Produto: {sale.Product}, Preço: {sale.Price}, Data: {sale.SaleData.ToString("dd/MM/yyyy HH:mm")}");
+}
+
+// // --------------------------------------------------------------------------------
+
+// Criando um arquivo em formato JSON que passa um List contendo vendas
+
+// DateTime currentData = DateTime.Now;
+
+// List<Sale> salesList = new List<Sale>();
+
+// Sale v1 = new Sale(1, "Office supplies", 25.0M, currentData);
+// Sale v2 = new Sale(2, "Software License", 110.0M, currentData);
+
+// salesList.Add(v1);
+// salesList.Add(v2);
+
+// string serialized = JsonConvert.SerializeObject(salesList, Formatting.Indented);
+
+// File.WriteAllText("Arquivos/sales.json", serialized);
+
+// Console.WriteLine(serialized);
+
+// ISO 8601 - Padroniza o modo como os dados são mostrados no sistema
+
+// // --------------------------------------------------------------------------------
 
 // IF TERNÁRIO
-isEven = number % 2 == 0;
-Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 
+// int number = 15;
+// bool isEven = false;
+
+// isEven = number % 2 == 0;
+// Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
+
+// // --------------------------------------------------------------------------------
 
 // IF NÃO TERNARIO
 // if (number % 2 == 0)
@@ -20,29 +60,9 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 //     Console.WriteLine($"O número {number} é impar");
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // --------------------------------------------------------------------------------
+
+// Desconstrução de um objeto
 
 // Pessoa p1 = new Pessoa("Mateus", "Santos");
 
@@ -51,6 +71,8 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 // Console.WriteLine($"{name} {lastname}");
 
 // // --------------------------------------------------------------------------------
+
+// Tuplas
 
 // (int, string, string, decimal) tuple = (1, "Mateus", "Santos", 1.80M);
 
@@ -67,6 +89,8 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 // Console.WriteLine($"Altura: {tuple.Item4}");
 
 // // --------------------------------------------------------------------------------
+
+// Diccionary
 
 // O Dictionary armazena dados e uma chave, essa que deve ser unica, lembra muito o conceito de orientação a objeto, de classe e objeto
 // Tudo que eu faço no dicionario é por meio de sua chave 
@@ -88,8 +112,6 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 // states.Remove("BA");
 // states["SE"] = "Sergipe - valor alterado";
 
-// Console.WriteLine("-----------------------------");
-
 // foreach(var item in states)
 // {
 //     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
@@ -109,7 +131,9 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 
 // // --------------------------------------------------------------------------------
 
-//  O Stack funciona ao contrario da pilha, voce adiciona elementos como uma pilha mesmo, e o ultimo elemento dela que vai ser tratado em vez do primeiro
+// Stack/Pilha
+
+//  O Stack funciona como uma pilha, voce adiciona elementos como uma pilha mesmo, e o ultimo elemento dela que vai ser tratado em vez do primeiro
 // LIFO - LAST IN FIRST OUT
 
 // Stack<int> stack = new Stack<int>();
@@ -134,6 +158,8 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 // }
 
 // // --------------------------------------------------------------------------------
+
+// Queue/Fila
 
 // O Queue funciona como uma fila, ele vai tratar o primeiro componente dela como prioridade
 // FIFO - FIRST IN FIRST OUT
@@ -160,9 +186,9 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 
 // // --------------------------------------------------------------------------------
 
-// new ExemploExecao().Metodo1();
+// Exeções 
 
-// // --------------------------------------------------------------------------------
+// new ExemploExecao().Metodo1();
 
 // try
 // {
@@ -196,6 +222,8 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 
 // // --------------------------------------------------------------------------------
 
+// Usando o  DateTime
+
 // string dateString = "2022-12-17 18:00";
 
 
@@ -213,11 +241,11 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 //     Console.WriteLine($"{dateString} não é uma data válida");
 // }
 
-// // --------------------------------------------------------------------------------
-
 // Console.WriteLine(data.ToShortDateString());
 
 // // --------------------------------------------------------------------------------
+
+// Usando o Culture info e o ToString
 
 // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
@@ -236,10 +264,10 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 
 // // --------------------------------------------------------------------------------
 
+//Conversão de string para inteiro
+
 // string numero1 = "10";
 // string numero2 = "20";
-
-// --------------------------------------------------------------------------------
 
 //string resultado = numero1 + numero2;
 
@@ -248,6 +276,8 @@ Console.WriteLine($"O número {number} é " + (isEven ? "par" : "impar"));
 // Console.WriteLine(resultado);
 
 // --------------------------------------------------------------------------------
+
+// Criando um objeto da classe Pessoa e adicionando a propriedade Alunos, do objeto cursoDeIngles
 
 // Pessoa p1 = new Pessoa(nome: "Mateus", sobrenome: "Santos");
 // Pessoa p2 = new Pessoa(nome: "Matias", sobrenome: "Santana");
